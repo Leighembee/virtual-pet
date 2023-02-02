@@ -7,7 +7,9 @@
     "dev": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ignore-path ./.gitignore --fix \"./**/*.{js,ts}\"",
-    "lint:check": "eslint --ignore-path ./.gitignore --quiet \"./**/*.{js,ts}\""
+    "lint:check": "eslint --ignore-path ./.gitignore --quiet \"./**/*.{js,ts}\"",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "format:check": "prettier --ignore-path ./.gitignore --check \"./**/*.{html,json,js,ts,css}\""
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
-    "parcel": "^2.0.0"
+    "parcel": "^2.0.0",
+    "prettier": "^2.8.3"
   }
 }
