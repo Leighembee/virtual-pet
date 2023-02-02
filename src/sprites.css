@@ -1,3 +1,4 @@
+/* css and assets provided by https://github.com/btholt/project-files-for-fox-game/tree/master/start-here/src */
 .btn {
 	background-image: url(bg/BUTTONS/NotSelected.png);
 	background-position: 0px;
@@ -38,7 +39,7 @@
 	border-color: transparent;
 }
 
-.icon.poop-icon {
+.icon.waste-icon {
 	background-position: -162px 0px;
 }
 
@@ -74,16 +75,16 @@
 	}
 }
 
-.fox.fox-pooping {
+.fox.fox-bathroom {
 	background-image: url(./pet/Pooping.png);
 	background-position: -1836px;
 	background-repeat: no-repeat;
 	width: 204px;
 	height: 202px;
-	animation: pooping 5s steps(10);
+	animation: bathroom 5s steps(10);
 }
 
-.fox.fox-pooped {
+.fox.fox-bathroom-done {
 	background-image: url(./pet/Pooping.png);
 	background-position: -1836px;
 	background-repeat: no-repeat;
@@ -91,7 +92,7 @@
 	height: 202px;
 }
 
-@keyframes pooping {
+@keyframes bathroom {
 	from {
 		background-position: 0;
 	}
@@ -231,15 +232,15 @@
 	}
 }
 
-.poop-bag {
+.waste-bag {
 	background-image: url(./pet/PoopBag.png);
-	animation: swing-poop-bag 1s steps(3) infinite alternate;
+	animation: swing-waste-bag 1s steps(3) infinite alternate;
 	width: 99px;
 	height: 104px;
 	overflow: hidden;
 }
 
-@keyframes swing-poop-bag {
+@keyframes swing-waste-bag {
 	to {
 		background-position: -297px;
 	}
