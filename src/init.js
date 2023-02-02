@@ -1,8 +1,7 @@
+import gameState from './gameState';
+
+// game advances every 3 seconds
 const TICK_RATE = 3000;
-// allow user to advance game every 3 seconds
-function tick() {
-	console.log('tick', Date.now());
-}
 
 async function init() {
 	console.log('starting game');
@@ -13,7 +12,7 @@ async function init() {
 		const now = Date.now();
 
 		if (nextTimeToTick <= now) {
-			tick();
+			gameState.tick();
 			nextTimeToTick = now + TICK_RATE;
 		}
 		// when idle call nextAnimationFrame
