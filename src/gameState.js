@@ -8,4 +8,19 @@ const gameState = {
 	},
 };
 
+/*
+possible game states
+[
+  "INIT",
+  "HATCHING",
+  "IDLING",
+  "SLEEPING",
+  "EATING",
+  "BATHROOM",
+  "HUNGRY",
+  "CELEBRATING",
+  "DEAD"
+]
+*/
+
 export default gameState;
